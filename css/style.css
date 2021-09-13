@@ -2,3 +2,105 @@ article {
 	width: 960px;
 	margin: 0 auto;
 }
+
+h1, h2, h3 {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-weight: bold;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.25;
+}
+
+header {
+	margin-bottom: 1rem;
+}
+
+h2:not(:first-of-type), h3:not(:first-of-type){
+	margin-top: 1.5rem;
+}
+
+h2, h3 {
+	padding-bottom: 1rem;
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+p:not(:last-child), ul:not(:last-child) {
+	margin-bottom: 1rem;
+}
+
+ul {
+	list-style-type: lower-roman;
+	margin-left: 3rem;
+}
+
+header {
+	text-align: center;
+}
+
+figure {
+	padding: 1rem 0;
+}
+
+section {
+	margin: 2rem 0;;
+}
+
+section:nth-of-type(odd){
+	background-color: rgb(236, 236, 236);
+}
+
+section:nth-of-type(even){
+	background-color: white;
+}
+
+section:first-of-type figure {
+	text-align: center;
+}
+
+.figures {
+	display: flex;
+	flex-direction: column;
+}
+
+.figures figure {
+	display: flex;
+	justify-content: space-between;
+}
+
+.figures img{
+	width: 50%;
+}
+
+.figures figure:nth-of-type(even){
+	margin-left: auto;
+	flex-direction: row-reverse;
+}
+
+.figures figcaption {
+	width: 50%;
+}
+
+.figures figure:nth-of-type(odd) figcaption{
+	padding-left: 1rem;
+}
+
+.figures figure:nth-of-type(even) figcaption{
+	padding-right: 1rem;
+}
+
+.figures figure:nth-of-type(even) {
+	background-color: white;
+}
